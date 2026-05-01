@@ -1,47 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
 .container {
-  background-color: #ecf0f1;
-  min-height: 100vh;
-  font-family: Arial;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
 }
 
 .header {
-  background-color: #e73e33;
-  padding: 20px;
-  text-align: center;
-  color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #e63946;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: #555;
+}
+
+.procurar {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+}
+
+.procurar label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.procurar input {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.procurar button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.procurar button:hover {
+    background-color: #c1121f;
 }
 
 .pokemon-info {
-  text-align: center;
-  margin: 20px;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 
-.pokemon-info img {
-  width: 150px;
-  height: 150px;
+ h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #e63946;
+    margin-bottom: 0.25rem;
 }
 
-.card {
-  border: 1px solid #d5d5d5;
-  border-radius: 5px;
-  margin: 10px 20px;
-  padding: 10px;
-  text-align: center;
+ h3 {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 1rem;
 }
 
-.card p {
-  font-size: 20px;
-  margin-bottom: 10px;
+ img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0.5rem;
 }
 
-button {
-  padding: 8px 15px;
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  cursor: pointer;
+ h4 {
+    text-transform: capitalize;
+    background-color: #f0f0f0;
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    margin: 0.75rem 0;
+    font-size: 0.95rem;
+    color: #444;
 }
 
-button:hover {
-  background-color: #005fa3;
+ p {
+    font-size: 0.95rem;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+}
+
+ p:last-child {
+    border-bottom: none;
+}
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+ td {
+    padding: 0.4rem 0.5rem;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+ td:first-child {
+    font-weight: bold;
+    color: #888;
+    width: 50%;
+}
+
+ table caption {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 0.5rem;
 }
